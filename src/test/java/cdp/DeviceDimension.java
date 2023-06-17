@@ -23,9 +23,9 @@ public class DeviceDimension {
          devTools.createSession();
 
          //send commands to CDP-> CDP Methods will invoke Chrome Dev Tools
-        devTools.send(Emulation.setDeviceMetricsOverride(600,1000,75,true, empty(), empty(), empty(), empty(), empty(), empty(), empty(), empty(), empty()));
+ //       devTools.send(Emulation.setDeviceMetricsOverride(600,1000,75,true, empty(), empty(), empty(), empty(), empty(), empty(), empty(), empty(), empty()));
 
-        driver.get("URL");
+  //      driver.get("URL");
 
         //page is opened in said dimension
 
