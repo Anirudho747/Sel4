@@ -22,6 +22,12 @@ public class RelativeLocator {
 
         WebElement dobTextBox = driver.findElement(By.xpath("//*[@for='dateofBirth']"));
         System.out.println(driver.findElement(with(By.tagName("input")).below(dobTextBox)).getText());
+
+        WebElement iceCreamLover = driver.findElement(By.xpath("//label[@for='exampleCheck1']"));
+        driver.findElement(with(By.tagName("input")).toLeftOf(iceCreamLover)).click();
+
+        WebElement esLabel = driver.findElement(By.xpath("//label[@for='exampleFormControlRadio1']"));
+        driver.findElement(with(By.tagName("input")).toRightOf(esLabel)).click();
     }
 
 }
